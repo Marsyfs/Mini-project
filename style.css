@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    margin: 0;
+    background-color: rgb(24, 34, 32);;
+}
+
+.banner-logo {
+    position: absolute;
+    left: 20px;
+    width: 200px;
+    margin-top: -45px;
+    height: auto;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.background-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;  
+    background-image: url('istockphoto-494200046-640_adpp_is.mp4');
+    filter: brightness(0.7);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;                 
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    padding-bottom: 0px;
+    z-index: 1000;     
+}
+
+#dropdownMenuButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-right: 20px;
+    opacity: 0.8;
+    margin-left: 55px;
+}
+#dropdownMenuButton:hover {
+    opacity: 1; 
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .dropdown-menu{
+    background-color: transparent;
+    border: none;
+}
+
+.navbar .dropdown-menu a {
+    background-color: transparent;
+    border: none;
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+    font-size: 25px;
+}
+
+.navbar .dropdown-menu a:hover {
+    background-color: transparent;
+    border: none;
+    color: white;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.overlay-container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    z-index: 2;
+}
+
+.overlay-heading h1 {
+    z-index: 1;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px#a7a7a7;
+}
+
+.social-media-icons {
+    display: flex;
+    position: fixed;
+    gap: 15px;
+    align-items: center;
+    padding-right: 20px;
+    opacity: 0.7;
+    margin-top: -45px;
+}
+
+.facebook-logo, .instagram-logo, .twitter-logo {
+    width: 30px;
+    height: 30px;
+    opacity: 0.8;
+}
+
+.facebook-logo:hover, 
+.instagram-logo:hover, 
+.twitter-logo:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-section {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 250px;
+
+}
+
+.card-section-heading,h1 {
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    color: #ffffff;
+    padding-bottom: 60px;
+}
+
+.card {
+    border: 0;
+}
+
+.card-title {
+    color: #ffffff;
+}
+
+.card-text {
+    color: #a7a7a7;
+}
+
+.content-divs-number {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.content-divs-content {
+    color: #a7a7a7;
+}
+
+.content-div-middle {
+    border-left: 1px white solid;
+    border-right: 1px white solid;
+}
+
+.carousel-container {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    z-index: 1;  
+}
+
+.carousel-img {
+    height: 50%;
+    width: auto;
+    padding: 100px;
+    
+}  
+
+.carousel-caption {
+    padding-bottom: 100px;
+    text-shadow: 2px 2px 5px black ;
+}
+
+.carousel-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel-button:hover {
+    background: transparent;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    gap: 30px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 14px;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+footer h5 {
+    margin: 0;
+}
+
+.footer-box {
+    background: #dddddd00;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: solid 1px #ddd;
+}
+
+.footer-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    cursor: pointer;
+}
