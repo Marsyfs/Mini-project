@@ -19,7 +19,6 @@ body {
     margin-top: -45px;
     height: auto;
     z-index: 1;
-    opacity: 0.8;
 }
 
 .hero-section {
@@ -57,12 +56,12 @@ body {
     border: none;
     cursor: pointer;
     padding-right: 20px;
-    opacity: 0.8;
     margin-left: 55px;
+    transition: all 0.5s ease-in-out;
 }
 #dropdownMenuButton:hover {
-    opacity: 1; 
-    transition: all 0.3s ease-in-out;
+    transform: scale(0.9);
+    opacity: 0.7;
 }
 
 .navbar .dropdown-menu{
@@ -77,21 +76,24 @@ body {
     opacity: 0.8;
     text-align: center;
     font-size: 25px;
+    transition: all 0.5s ease-in-out;
 }
 
 .navbar .dropdown-menu a:hover {
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.2);
     border: none;
     color: white;
     opacity: 1;
     transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
+    transform: scale(0.9)
 }
 
 
 
 .overlay-container {
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -122,22 +124,23 @@ body {
 .facebook-logo, .instagram-logo, .twitter-logo {
     width: 30px;
     height: 30px;
-    opacity: 0.8;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
 }
 
 .facebook-logo:hover, 
 .instagram-logo:hover, 
 .twitter-logo:hover {
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
+    opacity: 0.8;
+    transform: scale(0.9);
+    
 }
 
 .card-section {
     padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 250px;
-
+    padding-bottom: 60px;
 }
 
 .card-section-heading,h1 {
@@ -157,6 +160,21 @@ body {
 
 .card-text {
     color: #a7a7a7;
+}
+
+.card-img-top:hover {
+    filter: brightness(0.5);
+}
+
+.read-more-button {
+    border: #a7a7a7;
+    background-color: #ffffff;
+    color: rgb(24, 34, 32);
+    
+}
+
+.content-cards {
+    padding-top: 50px;
 }
 
 .content-divs-number {
